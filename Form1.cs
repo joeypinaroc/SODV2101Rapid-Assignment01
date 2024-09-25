@@ -19,6 +19,10 @@ namespace SODV2101Rapid_Assignment01
 
         private void Btn_Click(object sender, EventArgs e)
         {
+            Button Move = (Button)sender;
+
+            lbl_Input.Text = Move.Tag as string; // Identify the button clicked by the player
+            Move.Text = "X"; // Change 'X' or 'O'
 
         }
     }
