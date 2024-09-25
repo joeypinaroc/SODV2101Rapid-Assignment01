@@ -17,7 +17,7 @@ namespace SODV2101Rapid_Assignment01
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Btn_Click(object sender, EventArgs e)
         {
 
         }
