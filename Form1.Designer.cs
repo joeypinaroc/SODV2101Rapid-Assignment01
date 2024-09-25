@@ -37,6 +37,7 @@
             this.Btn_9 = new System.Windows.Forms.Button();
             this.Btn_8 = new System.Windows.Forms.Button();
             this.Btn_7 = new System.Windows.Forms.Button();
+            this.lbl_Input = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn_1
@@ -147,11 +148,21 @@
             this.Btn_7.UseVisualStyleBackColor = true;
             this.Btn_7.Click += new System.EventHandler(this.Btn_Click);
             // 
+            // lbl_Input
+            // 
+            this.lbl_Input.AutoSize = true;
+            this.lbl_Input.Location = new System.Drawing.Point(452, 199);
+            this.lbl_Input.Name = "lbl_Input";
+            this.lbl_Input.Size = new System.Drawing.Size(21, 16);
+            this.lbl_Input.TabIndex = 9;
+            this.lbl_Input.Text = "lbl";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_Input);
             this.Controls.Add(this.Btn_9);
             this.Controls.Add(this.Btn_8);
             this.Controls.Add(this.Btn_7);
@@ -165,6 +176,7 @@
             this.Text = "Form1";
             this.Click += new System.EventHandler(this.Btn_Click);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,6 +190,7 @@
         private System.Windows.Forms.Button Btn_9;
         private System.Windows.Forms.Button Btn_8;
         private System.Windows.Forms.Button Btn_7;
+        private System.Windows.Forms.Label lbl_Input;
     }
 }
 
