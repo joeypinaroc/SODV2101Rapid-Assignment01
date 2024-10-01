@@ -38,6 +38,7 @@
             this.Btn_8 = new System.Windows.Forms.Button();
             this.Btn_7 = new System.Windows.Forms.Button();
             this.lbl_Note = new System.Windows.Forms.Label();
+            this.Btn_Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_1
@@ -154,15 +155,26 @@
             this.lbl_Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Note.Location = new System.Drawing.Point(377, 168);
             this.lbl_Note.Name = "lbl_Note";
-            this.lbl_Note.Size = new System.Drawing.Size(207, 36);
+            this.lbl_Note.Size = new System.Drawing.Size(171, 29);
             this.lbl_Note.TabIndex = 9;
             this.lbl_Note.Text = "<Placeholder>";
             // 
+            // Btn_Reset
+            // 
+            this.Btn_Reset.Location = new System.Drawing.Point(411, 268);
+            this.Btn_Reset.Name = "Btn_Reset";
+            this.Btn_Reset.Size = new System.Drawing.Size(92, 23);
+            this.Btn_Reset.TabIndex = 10;
+            this.Btn_Reset.Text = "Reset Game";
+            this.Btn_Reset.UseVisualStyleBackColor = true;
+            this.Btn_Reset.Click += new System.EventHandler(this.Btn_Reset_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 367);
+            this.Controls.Add(this.Btn_Reset);
             this.Controls.Add(this.lbl_Note);
             this.Controls.Add(this.Btn_9);
             this.Controls.Add(this.Btn_8);
@@ -192,6 +204,7 @@
         private System.Windows.Forms.Button Btn_8;
         private System.Windows.Forms.Button Btn_7;
         private System.Windows.Forms.Label lbl_Note;
+        private System.Windows.Forms.Button Btn_Reset;
     }
 }
 

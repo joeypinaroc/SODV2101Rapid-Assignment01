@@ -46,5 +46,10 @@ namespace SODV2101Rapid_Assignment01
                 lbl_Note.Text = $"Congratulations! \nPlayer {player} wins!";
             }
         }
+
+        private void Btn_Reset_Click(object sender, EventArgs e)
+        {
+            TicTacToe.ResetGame();
+        }
     }
 }
