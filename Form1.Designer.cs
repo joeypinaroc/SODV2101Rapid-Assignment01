@@ -37,7 +37,7 @@
             this.Btn_9 = new System.Windows.Forms.Button();
             this.Btn_8 = new System.Windows.Forms.Button();
             this.Btn_7 = new System.Windows.Forms.Button();
-            this.lbl_Input = new System.Windows.Forms.Label();
+            this.lbl_Note = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn_1
@@ -47,7 +47,7 @@
             this.Btn_1.Name = "Btn_1";
             this.Btn_1.Size = new System.Drawing.Size(70, 93);
             this.Btn_1.TabIndex = 0;
-            this.Btn_1.Tag = "1";
+            this.Btn_1.Tag = "0";
             this.Btn_1.Text = "1";
             this.Btn_1.UseVisualStyleBackColor = true;
             this.Btn_1.Click += new System.EventHandler(this.Btn_Click);
@@ -59,7 +59,7 @@
             this.Btn_2.Name = "Btn_2";
             this.Btn_2.Size = new System.Drawing.Size(70, 93);
             this.Btn_2.TabIndex = 1;
-            this.Btn_2.Tag = "2";
+            this.Btn_2.Tag = "1";
             this.Btn_2.Text = "2";
             this.Btn_2.UseVisualStyleBackColor = true;
             this.Btn_2.Click += new System.EventHandler(this.Btn_Click);
@@ -71,7 +71,7 @@
             this.Btn_3.Name = "Btn_3";
             this.Btn_3.Size = new System.Drawing.Size(70, 93);
             this.Btn_3.TabIndex = 2;
-            this.Btn_3.Tag = "3";
+            this.Btn_3.Tag = "2";
             this.Btn_3.Text = "3";
             this.Btn_3.UseVisualStyleBackColor = true;
             this.Btn_3.Click += new System.EventHandler(this.Btn_Click);
@@ -83,7 +83,7 @@
             this.Btn_6.Name = "Btn_6";
             this.Btn_6.Size = new System.Drawing.Size(70, 93);
             this.Btn_6.TabIndex = 5;
-            this.Btn_6.Tag = "6";
+            this.Btn_6.Tag = "5";
             this.Btn_6.Text = "6";
             this.Btn_6.UseVisualStyleBackColor = true;
             this.Btn_6.Click += new System.EventHandler(this.Btn_Click);
@@ -95,7 +95,7 @@
             this.Btn_5.Name = "Btn_5";
             this.Btn_5.Size = new System.Drawing.Size(70, 93);
             this.Btn_5.TabIndex = 4;
-            this.Btn_5.Tag = "5";
+            this.Btn_5.Tag = "4";
             this.Btn_5.Text = "5";
             this.Btn_5.UseVisualStyleBackColor = true;
             this.Btn_5.Click += new System.EventHandler(this.Btn_Click);
@@ -107,7 +107,7 @@
             this.Btn_4.Name = "Btn_4";
             this.Btn_4.Size = new System.Drawing.Size(70, 93);
             this.Btn_4.TabIndex = 3;
-            this.Btn_4.Tag = "4";
+            this.Btn_4.Tag = "3";
             this.Btn_4.Text = "4";
             this.Btn_4.UseVisualStyleBackColor = true;
             this.Btn_4.Click += new System.EventHandler(this.Btn_Click);
@@ -119,7 +119,7 @@
             this.Btn_9.Name = "Btn_9";
             this.Btn_9.Size = new System.Drawing.Size(70, 93);
             this.Btn_9.TabIndex = 8;
-            this.Btn_9.Tag = "9";
+            this.Btn_9.Tag = "8";
             this.Btn_9.Text = "9";
             this.Btn_9.UseVisualStyleBackColor = true;
             this.Btn_9.Click += new System.EventHandler(this.Btn_Click);
@@ -131,7 +131,7 @@
             this.Btn_8.Name = "Btn_8";
             this.Btn_8.Size = new System.Drawing.Size(70, 93);
             this.Btn_8.TabIndex = 7;
-            this.Btn_8.Tag = "8";
+            this.Btn_8.Tag = "7";
             this.Btn_8.Text = "8";
             this.Btn_8.UseVisualStyleBackColor = true;
             this.Btn_8.Click += new System.EventHandler(this.Btn_Click);
@@ -143,26 +143,27 @@
             this.Btn_7.Name = "Btn_7";
             this.Btn_7.Size = new System.Drawing.Size(70, 93);
             this.Btn_7.TabIndex = 6;
-            this.Btn_7.Tag = "7";
+            this.Btn_7.Tag = "6";
             this.Btn_7.Text = "7";
             this.Btn_7.UseVisualStyleBackColor = true;
             this.Btn_7.Click += new System.EventHandler(this.Btn_Click);
             // 
-            // lbl_Input
+            // lbl_Note
             // 
-            this.lbl_Input.AutoSize = true;
-            this.lbl_Input.Location = new System.Drawing.Point(452, 199);
-            this.lbl_Input.Name = "lbl_Input";
-            this.lbl_Input.Size = new System.Drawing.Size(21, 16);
-            this.lbl_Input.TabIndex = 9;
-            this.lbl_Input.Text = "lbl";
+            this.lbl_Note.AutoSize = true;
+            this.lbl_Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Note.Location = new System.Drawing.Point(377, 168);
+            this.lbl_Note.Name = "lbl_Note";
+            this.lbl_Note.Size = new System.Drawing.Size(207, 36);
+            this.lbl_Note.TabIndex = 9;
+            this.lbl_Note.Text = "<Placeholder>";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbl_Input);
+            this.ClientSize = new System.Drawing.Size(669, 367);
+            this.Controls.Add(this.lbl_Note);
             this.Controls.Add(this.Btn_9);
             this.Controls.Add(this.Btn_8);
             this.Controls.Add(this.Btn_7);
@@ -172,9 +173,9 @@
             this.Controls.Add(this.Btn_3);
             this.Controls.Add(this.Btn_2);
             this.Controls.Add(this.Btn_1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Click += new System.EventHandler(this.Btn_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,7 +191,7 @@
         private System.Windows.Forms.Button Btn_9;
         private System.Windows.Forms.Button Btn_8;
         private System.Windows.Forms.Button Btn_7;
-        private System.Windows.Forms.Label lbl_Input;
+        private System.Windows.Forms.Label lbl_Note;
     }
 }
 
