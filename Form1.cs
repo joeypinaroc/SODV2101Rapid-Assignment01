@@ -67,16 +67,18 @@ namespace SODV2101Rapid_Assignment01
                 }
             }
             lbl_Note.Text = "Player 1's turn.";
-        }
-        private void DisableButtons()
+        }      
+        private void DisableButtons() //Disable buttons after win
         {
             foreach(Control control in Controls)
             {
-                if(control is Button && control.Name != "Btn_Reset")
+                if(control is Button && control.Name != "Btn_Reset") // All buttons except Reset button
                 {
                     control.Enabled = false;
                 }
             }
         }
+
+     
     }
 }
