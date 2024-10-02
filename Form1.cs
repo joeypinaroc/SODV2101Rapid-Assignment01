@@ -31,19 +31,51 @@ namespace SODV2101Rapid_Assignment01
             {
                 cell.Text = "X";
                 cell.BackColor = Color.Blue;
-                lbl_Note.Text = "Player 1's turn.";
+                lbl_Note.Text = "Player 2's turn.";
             }
             else // Player 2 made the move
             {
                 cell.Text = "O";
                 cell.BackColor = Color.Red;
-                lbl_Note.Text = "Player 2's turn.";
+                lbl_Note.Text = "Player 1's turn.";
             }
 
             // Check winning condition
             if (TicTacToe.CheckWin())
             {
                 lbl_Note.Text = $"Congratulations! \nPlayer {player} wins!";
+                DisableButtons(); // Disable all buttons at win
+            }
+        }
+
+        private void Btn_Reset_Click(object sender, EventArgs e)
+        {
+            TicTacToe.ResetGame(); // Reset game logic
+            ResetBoardUI(); // Reset UI to default state
+
+        }
+
+        private void ResetBoardUI()
+        {
+            foreach(Control control in Controls)
+            {
+                if(control is Button button && button.Name != "Btn_Reset")
+                {
+                    control.Text = string.Empty; // Clear text
+                    control.BackColor = DefaultBackColor; // Reset button color
+                    control.Enabled = true; // Enable buttons for new game
+                }
+            }
+            lbl_Note.Text = "Player 1's turn.";
+        }
+        private void DisableButtons()
+        {
+            foreach(Control control in Controls)
+            {
+                if(control is Button && control.Name != "Btn_Reset")
+                {
+                    control.Enabled = false;
+                }
             }
         }
     }
