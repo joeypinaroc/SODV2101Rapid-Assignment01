@@ -46,6 +46,11 @@ namespace SODV2101Rapid_Assignment01
                 lbl_Note.Text = $"Congratulations! \nPlayer {player} wins!";
                 DisableButtons(); // Disable all buttons at win
             }
+            else if(TicTacToe.CheckDraw())
+            {
+                lbl_Note.Text = "It's a draw!";
+                DisableButtons();
+            }
         }
 
         private void Btn_Reset_Click(object sender, EventArgs e)

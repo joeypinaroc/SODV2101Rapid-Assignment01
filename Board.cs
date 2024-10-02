@@ -52,7 +52,18 @@ namespace SODV2101Rapid_Assignment01
                 }
                 return false;
             }
-
+        }
+        // Condition to check draw
+        public bool CheckDraw()
+        {
+            foreach(var cell in _boardstate)
+            {
+                if (cell == 0)
+                {
+                    return false; // if any cell is empty, it's not a draw
+                }
+            }
+            return !CheckWin(); // If all cells are filled and there's no winner, it's a draw
         }
         public void ResetBoard()
         {
