@@ -49,7 +49,22 @@ namespace SODV2101Rapid_Assignment01
 
         private void Btn_Reset_Click(object sender, EventArgs e)
         {
-            TicTacToe.ResetGame();
+            TicTacToe.ResetGame(); // Reset game logic
+            ResetBoardUI(); // Reset UI to default state
+
+        }
+
+        private void ResetBoardUI()
+        {
+            foreach(Control control in Controls)
+            {
+                if(control is Button button && button.Name != "Btn_Reset")
+                {
+                    control.Text = string.Empty; // Clear text
+                    control.BackColor = DefaultBackColor; // Reset button color
+                    control.Enabled = true; // Enable the button for new game
+                }
+            }
         }
     }
 }
