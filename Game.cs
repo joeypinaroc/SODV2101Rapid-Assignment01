@@ -27,6 +27,10 @@ namespace SODV2101Rapid_Assignment01
             return _board.CheckWin();
         }
 
+        public void ResetGame()
+        {
+            _board.ResetBoard();
+        }
 
     }
 

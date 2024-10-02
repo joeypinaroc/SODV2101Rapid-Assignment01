@@ -54,5 +54,10 @@ namespace SODV2101Rapid_Assignment01
             }
 
         }
+        public void ResetBoard()
+        {
+            _boardstate = new int[9];
+            _turn = 0;
+        }
     }
 }
