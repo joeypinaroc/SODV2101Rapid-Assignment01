@@ -184,10 +184,10 @@
             // lbl_Header
             // 
             this.lbl_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.Location = new System.Drawing.Point(163, 25);
+            this.lbl_Header.Location = new System.Drawing.Point(163, 35);
             this.lbl_Header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(164, 36);
+            this.lbl_Header.Size = new System.Drawing.Size(182, 36);
             this.lbl_Header.TabIndex = 11;
             this.lbl_Header.Text = "TicTacToe";
             // 
@@ -196,7 +196,7 @@
             this.lbl_Note.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lbl_Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Note.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_Note.Location = new System.Drawing.Point(476, 209);
+            this.lbl_Note.Location = new System.Drawing.Point(482, 209);
             this.lbl_Note.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Note.Name = "lbl_Note";
             this.lbl_Note.Size = new System.Drawing.Size(289, 104);
@@ -207,7 +207,7 @@
             // Btn_Reset
             // 
             this.Btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Reset.Location = new System.Drawing.Point(568, 327);
+            this.Btn_Reset.Location = new System.Drawing.Point(551, 327);
             this.Btn_Reset.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Reset.Name = "Btn_Reset";
             this.Btn_Reset.Size = new System.Drawing.Size(151, 66);

@@ -24,6 +24,7 @@ namespace SODV2101Rapid_Assignment01
         private void Btn_Click(object sender, EventArgs e)
         {
             Button cell = (Button)sender;
+            cell.Enabled = false;
 
             // Return the player who made the turn
             int player = TicTacToe.Turn(int.Parse(cell.Tag as string));
