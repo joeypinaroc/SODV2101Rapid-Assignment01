@@ -37,9 +37,9 @@
             this.Btn_9 = new System.Windows.Forms.Button();
             this.Btn_8 = new System.Windows.Forms.Button();
             this.Btn_7 = new System.Windows.Forms.Button();
+            this.lbl_Header = new System.Windows.Forms.Label();
             this.lbl_Note = new System.Windows.Forms.Label();
             this.Btn_Reset = new System.Windows.Forms.Button();
-            this.lbl_Header = new System.Windows.Forms.Label();
             this.lbl_Player1 = new System.Windows.Forms.Label();
             this.lbl_Player2 = new System.Windows.Forms.Label();
             this.lbl_X = new System.Windows.Forms.Label();
@@ -181,16 +181,25 @@
             this.Btn_7.UseVisualStyleBackColor = false;
             this.Btn_7.Click += new System.EventHandler(this.Btn_Click);
             // 
+            // lbl_Header
+            // 
+            this.lbl_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Header.Location = new System.Drawing.Point(163, 25);
+            this.lbl_Header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Header.Name = "lbl_Header";
+            this.lbl_Header.Size = new System.Drawing.Size(164, 36);
+            this.lbl_Header.TabIndex = 11;
+            this.lbl_Header.Text = "TicTacToe";
+            // 
             // lbl_Note
             // 
-            this.lbl_Note.AutoSize = true;
             this.lbl_Note.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lbl_Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Note.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_Note.Location = new System.Drawing.Point(534, 242);
+            this.lbl_Note.Location = new System.Drawing.Point(476, 209);
             this.lbl_Note.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Note.Name = "lbl_Note";
-            this.lbl_Note.Size = new System.Drawing.Size(213, 36);
+            this.lbl_Note.Size = new System.Drawing.Size(289, 104);
             this.lbl_Note.TabIndex = 9;
             this.lbl_Note.Text = "Player 1\'s turn.";
             this.lbl_Note.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,7 +207,7 @@
             // Btn_Reset
             // 
             this.Btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Reset.Location = new System.Drawing.Point(556, 309);
+            this.Btn_Reset.Location = new System.Drawing.Point(568, 327);
             this.Btn_Reset.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Reset.Name = "Btn_Reset";
             this.Btn_Reset.Size = new System.Drawing.Size(151, 66);
@@ -208,20 +217,8 @@
             this.Btn_Reset.UseVisualStyleBackColor = true;
             this.Btn_Reset.Click += new System.EventHandler(this.Btn_Reset_Click);
             // 
-            // lbl_Header
-            // 
-            this.lbl_Header.AutoSize = true;
-            this.lbl_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Header.Location = new System.Drawing.Point(163, 25);
-            this.lbl_Header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Header.Name = "lbl_Header";
-            this.lbl_Header.Size = new System.Drawing.Size(164, 36);
-            this.lbl_Header.TabIndex = 11;
-            this.lbl_Header.Text = "TicTacToe";
-            // 
             // lbl_Player1
             // 
-            this.lbl_Player1.AutoSize = true;
             this.lbl_Player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Player1.Location = new System.Drawing.Point(471, 149);
             this.lbl_Player1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -232,7 +229,6 @@
             // 
             // lbl_Player2
             // 
-            this.lbl_Player2.AutoSize = true;
             this.lbl_Player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Player2.Location = new System.Drawing.Point(638, 149);
             this.lbl_Player2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -243,7 +239,6 @@
             // 
             // lbl_X
             // 
-            this.lbl_X.AutoSize = true;
             this.lbl_X.BackColor = System.Drawing.Color.Blue;
             this.lbl_X.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_X.Location = new System.Drawing.Point(563, 149);
@@ -255,10 +250,9 @@
             // 
             // lbl_O
             // 
-            this.lbl_O.AutoSize = true;
             this.lbl_O.BackColor = System.Drawing.Color.Red;
             this.lbl_O.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_O.Location = new System.Drawing.Point(730, 149);
+            this.lbl_O.Location = new System.Drawing.Point(736, 149);
             this.lbl_O.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_O.Name = "lbl_O";
             this.lbl_O.Size = new System.Drawing.Size(29, 25);
@@ -267,7 +261,8 @@
             // 
             // Form1
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(862, 503);
             this.Controls.Add(this.lbl_O);
@@ -289,9 +284,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicTacToe";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -305,9 +300,9 @@
         private System.Windows.Forms.Button Btn_9;
         private System.Windows.Forms.Button Btn_8;
         private System.Windows.Forms.Button Btn_7;
+        private System.Windows.Forms.Label lbl_Header;
         private System.Windows.Forms.Label lbl_Note;
         private System.Windows.Forms.Button Btn_Reset;
-        private System.Windows.Forms.Label lbl_Header;
         private System.Windows.Forms.Label lbl_Player1;
         private System.Windows.Forms.Label lbl_Player2;
         private System.Windows.Forms.Label lbl_X;
