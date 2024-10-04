@@ -14,6 +14,7 @@ namespace SODV2101Rapid_Assignment01
     {
         internal Game TicTacToe { get; private set; }
 
+        // Initialize components
         public Form1()
         {
             InitializeComponent();
@@ -48,7 +49,7 @@ namespace SODV2101Rapid_Assignment01
             }
             else if(TicTacToe.CheckDraw())
             {
-                lbl_Note.Text = "It's a draw!";
+                lbl_Note.Text = "It's a draw!"; // Game is a draw
                 DisableButtons();
             }
         }

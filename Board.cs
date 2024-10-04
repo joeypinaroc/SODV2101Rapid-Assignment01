@@ -9,6 +9,7 @@ namespace SODV2101Rapid_Assignment01
 
     internal class Board
     {
+        // Define properties
         private static int[] _boardstate { get; set; }
         private static int[][] _win { get; set; }
         private static int _turn { get; set; }
@@ -30,6 +31,7 @@ namespace SODV2101Rapid_Assignment01
             _turn = 0; // Player turn
         }
 
+        // Method to make a turn
         public int Turn(int cell)
         {
             _turn = _turn % 2;
@@ -53,6 +55,7 @@ namespace SODV2101Rapid_Assignment01
                 return false;
             }
         }
+
         // Condition to check draw
         public bool CheckDraw()
         {
@@ -65,6 +68,8 @@ namespace SODV2101Rapid_Assignment01
             }
             return !CheckWin(); // If all cells are filled and there's no winner, it's a draw
         }
+
+        // Reset Board
         public void ResetBoard()
         {
             _boardstate = new int[9];

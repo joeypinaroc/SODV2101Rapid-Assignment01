@@ -184,10 +184,10 @@
             // lbl_Note
             // 
             this.lbl_Note.AutoSize = true;
-            this.lbl_Note.BackColor = System.Drawing.SystemColors.Control;
+            this.lbl_Note.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lbl_Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Note.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_Note.Location = new System.Drawing.Point(516, 202);
+            this.lbl_Note.Location = new System.Drawing.Point(534, 242);
             this.lbl_Note.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Note.Name = "lbl_Note";
             this.lbl_Note.Size = new System.Drawing.Size(213, 36);
@@ -198,7 +198,7 @@
             // Btn_Reset
             // 
             this.Btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Reset.Location = new System.Drawing.Point(547, 282);
+            this.Btn_Reset.Location = new System.Drawing.Point(556, 309);
             this.Btn_Reset.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Reset.Name = "Btn_Reset";
             this.Btn_Reset.Size = new System.Drawing.Size(151, 66);
@@ -268,7 +268,8 @@
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(892, 452);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(862, 503);
             this.Controls.Add(this.lbl_O);
             this.Controls.Add(this.lbl_X);
             this.Controls.Add(this.lbl_Player2);
